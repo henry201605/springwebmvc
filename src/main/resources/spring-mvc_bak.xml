@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.0.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
+<!--
+    <context:component-scan base-package="org.nci.henry"     &lt;!&ndash; 扫描的基本包路径 &ndash;&gt;
+    annotation-config="true" &lt;!&ndash; 是否激活属性注入注解 &ndash;&gt;
+    name-generator="org.springframework.context.annotation.AnnotationBeanNameGenerator"  &lt;!&ndash; Bean的ID策略生成器 &ndash;&gt;
+    resource-pattern="**/*.class" &lt;!&ndash; 对资源进行筛选的正则表达式，这边是个大的范畴，具体细分在include-filter与exclude-filter中进行 &ndash;&gt;
+    scope-resolver="org.springframework.context.annotation.AnnotationScopeMetadataResolver" &lt;!&ndash; scope解析器 ，与scoped-proxy只能同时配置一个 &ndash;&gt;
+    scoped-proxy="no" &lt;!&ndash; scope代理，与scope-resolver只能同时配置一个 &ndash;&gt;
+    use-default-filters="false" &lt;!&ndash; 是否使用默认的过滤器，默认值true &ndash;&gt;
+    >
+    &lt;!&ndash; 注意：若使用include-filter去定制扫描内容，要在use-default-filters="false"的情况下，不然会“失效”，被默认的过滤机制所覆盖 &ndash;&gt;
+    &lt;!&ndash; annotation是对注解进行扫描 &ndash;&gt;
+    <context:include-filter type="annotation" expression="org.springframework.stereotype.Component"/>
+    &lt;!&ndash; assignable是对类或接口进行扫描 &ndash;&gt;
+    <context:include-filter type="assignable" expression="org.nci.henry.performer.Performer"/>
+    <context:include-filter type="assignable" expression="org.nci.henry.performer.impl.Sonnet"/>
+
+    &lt;!&ndash; 注意：在use-default-filters="false"的情况下，exclude-filter是针对include-filter里的内容进行排除 &ndash;&gt;
+    <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    <context:exclude-filter type="assignable" expression="org.nci.henry.performer.impl.RainPoem"/>
+    <context:exclude-filter type="regex" expression=".service.*"/>
+
+</context:component-scan>-->
+
+</beans>
